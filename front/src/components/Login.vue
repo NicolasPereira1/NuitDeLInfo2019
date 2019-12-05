@@ -10,14 +10,15 @@
                         v-model="name"
                         :counter="10"
                         :rules="nameRules"
-                        label="Name"
+                        label="Pseudo"
                         required
                 ></v-text-field>
 
                 <v-text-field
                         v-model="email"
+                        type="password"
                         :rules="emailRules"
-                        label="E-mail"
+                        label="Mot de passe"
                         required
                 ></v-text-field>
 
