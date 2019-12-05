@@ -1,5 +1,8 @@
 <template>
-      <h1 class="bonjour">le nom est et le prenom est</h1>
+    <div>
+      <h1>Bienvenue</h1>
+      <p> Bienvenue sur ce site, le but est de vous accompagner et de vous renseigner sur les aides que vous pouvez avoir</p>
+    </div>
 </template>
 
 <script>
