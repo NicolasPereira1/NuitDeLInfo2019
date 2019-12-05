@@ -10,6 +10,7 @@ import Sante from './components/Sante';
 import Logement from './components/Logement';
 import Familial from './components/Familial';
 import Administratif from './components/Administratif';
+import Register from "./components/Register";
 
 Vue.use(VueRouter);
 
@@ -26,7 +27,8 @@ const router = new VueRouter({
     { path : '/administratif', component: Administratif},
     { path : '/sante', component: Sante},
     { path : '/economique', component: Economique},
-    { path : '/familial', component: Familial}
+    { path : '/familial', component: Familial},
+    { path : '/register', component: Register}
   ]
 })
 

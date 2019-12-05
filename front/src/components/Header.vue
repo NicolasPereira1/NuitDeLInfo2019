@@ -2,7 +2,7 @@
     <v-app-bar
             v-if="display"
             app
-            color="red"
+            color="green"
               dark
     >
         <div class="d-flex align-center">
@@ -14,12 +14,10 @@
         </v-btn>
         </div>
 
-        <v-spacer></v-spacer>
-
         <v-menu offset-y>
       <template v-slot:activator="{ on }">
         <v-btn
-          color="red"
+          color="green"
           dark
           v-on="on"
         >
@@ -37,9 +35,8 @@
       </v-list>
     </v-menu>
 
-    <v-spacer></v-spacer>
     <v-btn
-        color = "red"
+        color = "green"
         dark
         v-on="on"
         @click="redirectForum"

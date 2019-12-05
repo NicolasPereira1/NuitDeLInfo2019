@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-flex xs6>
+        <v-flex xs6              >
             <v-form
                     ref="form"
                     v-model="valid"
@@ -29,6 +29,12 @@
                         @click="validate"
                 >
                     Se connecter
+                </v-btn>
+                <v-btn
+                        class="mr-4"
+                        @click="register"
+                >
+                    S'inscrire
                 </v-btn>
             </v-form>
         </v-flex>
@@ -62,12 +68,9 @@ export default {
                 this.snackbar = true
             }
         },
-        reset () {
-            this.$refs.form.reset()
-        },
-        resetValidation () {
-            this.$refs.form.resetValidation()
-        },
+        register() {
+            this.$router.push('/register');
+        }
     },
 };
 </script>
