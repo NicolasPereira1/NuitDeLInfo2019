@@ -12,7 +12,7 @@
         <v-spacer></v-spacer>
 
         <v-btn
-                href="https://github.com/vuetifyjs/vuetify/releases/latest"
+                @click="redirect"
                 target="_blank"
                 text
         >
@@ -30,7 +30,12 @@
             display : true,
             nom : UserService.nom,
             prenom : UserService.prenom
-        })
+        }),
+        methods: {
+            redirect(){
+                this.$router.push("/login");
+            }
+        }
     }
 </script>
 
