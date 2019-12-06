@@ -17,6 +17,13 @@ public class User {
     @Id
     @GeneratedValue
     private Long id;
+    private String pseudo;
     private String name;
     private String firstname;
+    private boolean student;
+    private boolean transport;
+    private boolean parent;
+    private boolean bourse;
+    private boolean ru;
+    private boolean regle;
 }
